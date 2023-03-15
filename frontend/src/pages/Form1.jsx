@@ -35,7 +35,7 @@ export default function Form1() {
 						min='4'
 						max='7'
 					/>
-					"<br />
+					<br />
 					<input type='checkbox' id='checkbox' />
 					Chargeur et cable
 					<br />
