@@ -1,0 +1,144 @@
+@import "../variables.scss";
+
+.board {
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.stats {
+    grid-column: 1;
+    border: 0.3rem solid #213A8E;
+    background-color: #213A8E;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    justify-content: space-around;
+}
+
+.hello-user {
+    color: white;
+    text-align: center;
+    font: $title-font;
+    margin: 0.5rem 0 0.5rem 0;
+    font-family: $title-font;
+    font-size: 2rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    border: #00ACB0;
+    color: $white;
+    background-color: #00ACB0;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    box-sizing: border-box;
+    font-family: $text-font;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.icons {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: $title-font;
+    font-size: 2rem;
+    color: #213A8E;
+    font-weight: bold;
+}
+
+.form {
+    margin: 2rem 0 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-self: stretch;
+    border: solid 0.4rem #FFCC1B;
+    border-radius: 20px;
+    background-color: #FFE68E;
+    padding: 0.3rem;
+    box-shadow: 5px 5px 5px #FFCC1B;
+    cursor: pointer;
+}
+
+.form:hover {
+    color: #FFCC1B;
+    background-color: #FFFFFF;
+}
+
+.form-title {
+    font-family: $title-font;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #FFCC1B;
+}
+
+.import {
+    margin: 2rem 0 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-self: stretch;
+    border: solid 0.4rem #E6334C;
+    border-radius: 20px;
+    background-color: #ED7081;
+    padding: 0.3rem;
+    box-shadow: 5px 5px 5px #E6334C;
+    cursor: pointer;
+}
+
+.import:hover {
+    color: #E6334C;
+    background-color: #FFFFFF;
+}
+
+.import-title {
+    font-family: $title-font;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #E6334C;
+}
+
+.actus {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-family: $title-font;
+    font-size: 2rem;
+    border: solid 0.8rem #7ABDEA;
+    border-radius: 20px;
+    background-color: rgba($color: #AED3EC, $alpha: 0.5);
+}
+
+.actu {
+    text-align: center;
+    margin: 2rem 0 0 0;
+    border-bottom: solid 0.4rem #489ED7;
+    font-family: $text-font;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}
