@@ -1,14 +1,4 @@
-INSERT INTO `brand` VALUES 
- (1, 'Google'),
- (2, 'Asus'),
- (3, 'Apple'),
- (4, 'Samsung'),
- (5, 'Xiaomi'),
- (6, 'Honor'),
- (7, 'Lg'),
- (8, 'Sony');
-
-INSERT INTO `model`values 
+INSERT INTO `model`(brand_id, model_name, os, ram, memory, screen_size, network, url) values 
 (1,"Pixel 6 pro","Android 12",12,128,"6,7","5G","https://images.pexels.com/photos/818043/pexels-photo-818043.jpeg"),
 (1,"Pixel 7","Android 13",8,128,"6,3","5G","https://images.pexels.com/photos/818043/pexels-photo-818043.jpeg"),
 (1,"Pixel 7 pro","Android 13",12,128,"5G","5G","https://images.pexels.com/photos/818043/pexels-photo-818043.jpeg"),
@@ -41,3 +31,14 @@ INSERT INTO `model`values
 (8,"Xperia 1 IV","Android 12",12,128,"6,5","5G","https://images.pexels.com/photos/818043/pexels-photo-818043.jpeg"),
 (8,"Xperia 10 III","Android 11",6,128,"6","5G","https://images.pexels.com/photos/818043/pexels-photo-818043.jpeg"),
 (8,"Xperia L4","Android 9",3,64,"6,2","4G","https://images.pexels.com/photos/163065/mobile-phone-android-apps-phone-163065.jpeg");
+
+
+INSERT INTO `brand` (brand, brand_id, model_id) VALUES 
+    ('Google', 1),
+    ('Asus', 2),
+    ('Apple', 3),
+    ('Samsung', 4),
+    ('Xiaomi', 5),
+    ('Honor', 6),
+    ('Lg', 7),
+    ('Sony', 8);
