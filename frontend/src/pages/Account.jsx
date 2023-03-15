@@ -1,4 +1,4 @@
-import "../styles/pages/Home.scss";
+import "../styles/pages/Profile.scss";
 
 export default function Account() {
 	return (
