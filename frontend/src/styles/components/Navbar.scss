@@ -1,0 +1,70 @@
+@import "../variables.scss";
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  height: 2.25rem;
+  width: 100%;
+  background-color: $cyan-blue;
+}
+
+.logo {
+  width: 15rem;
+  margin-left: 1.5rem;
+}
+
+.tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-tabs {
+  margin-right: 1rem;
+}
+
+.tab {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 4rem;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-trigger {
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.menu-content {
+  position: absolute;
+  top: 105%;
+  left: -10%;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  z-index: 1;
+  display: none;
+}
+
+.menu-container:hover .menu-content {
+  display: block;
+}
+
+.menu-content a {
+  display: block;
+  color: #333333;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.menu-content a:hover {
+  background-color: #f1f1f1;
+}

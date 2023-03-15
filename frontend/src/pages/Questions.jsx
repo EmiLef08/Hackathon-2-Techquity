@@ -1,9 +1,8 @@
 import "../styles/pages/Home.scss";
-
-export default function Home() {
+export default function Questions() {
 	return (
 		<div className='container'>
-			<div>Home</div>
+			<div>Questions</div>
 		</div>
 	);
 }

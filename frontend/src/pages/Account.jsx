@@ -1,9 +1,9 @@
 import "../styles/pages/Home.scss";
 
-export default function Home() {
+export default function Account() {
 	return (
 		<div className='container'>
-			<div>Home</div>
+			<div>Account</div>
 		</div>
 	);
 }
