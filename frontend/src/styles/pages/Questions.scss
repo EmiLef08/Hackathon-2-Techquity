@@ -1,0 +1,134 @@
+@import "../variables.scss";
+
+.faq-arrows {
+    margin: 0 2rem 1rem 2rem;
+    padding: 1.5rem;
+	width: auto;
+	height: 100%;
+    padding: 5% 5% 3.5rem 5%;
+    box-sizing: border-box;
+    background-color: #D6D6D6;
+    border-radius: 20px;
+    color: #FFFFFF;
+    // align-content: center;
+}
+
+.faq-arrows input {
+	display: none;
+}
+
+.header-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.headbox-title {
+    color: #FFFFFF;
+    font-family: $title-font;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0 1rem 0;
+    text-align: center;
+    text-shadow: 2px 0 10px #E6334C;
+}
+
+.box {
+	display: block;
+	margin-top: 0.7rem;
+	position: relative;
+  	height: auto;
+    width: 100%;
+    transition: all .15s ease-in-out;
+	border-radius: 1rem;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    width: 100%;
+}
+
+.box-title {
+	background-color: #E6334C;
+	border-radius: 1rem 1rem 0 0;
+	margin: 0;
+	font-size: 1rem;
+	color: #ffffff;
+	cursor: initial;
+	text-align:left;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+    padding: 20px 20px 10px 10px;
+}
+
+.box-content {
+	width: 100%;
+	padding: 30px 20px;
+	font-size: 0.8rem;
+    font-family: $text-font;
+    line-height: 1.5rem;
+	color: $white;
+	display: none;
+	background-color: #ED7081;
+	border-radius: 0 0 1rem 1rem;
+	overflow: hidden;
+	
+}
+
+.box-close {
+	position: absolute;
+	height: 64px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+
+input:checked + .box {
+	height: auto;
+	margin: 16px 0;
+  	box-shadow: 5px 5px 5px #FFCC1B;
+}
+
+input:checked + .box .box-title {
+	border-bottom: 1px solid #FFCC1B;
+}
+
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+	display: inline-block;
+}
+
+.faq-arrows .box-title {
+	padding-left: 44px;
+	width: 100%;
+}
+
+.faq-arrows .box-title:before {
+	position: absolute;
+	display: block;
+	content: '\00bb';
+	font-size: 28pt;
+	left: 20px;
+	top: 4px;
+	transition: transform .20s ease-in-out;
+	color: #FFFFFF;
+}
+
+input:checked + .box .box-title:before {
+	transform: rotate(90deg);
+}
