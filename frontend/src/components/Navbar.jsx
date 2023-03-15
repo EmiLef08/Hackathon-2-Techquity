@@ -49,9 +49,9 @@ export default function Navbar() {
 							onMouseLeave={handleDropdownClose}
 						>
 							{isDropdownOpen ? (
-								<div class='menu-container'>
-									<div class='menu-trigger'>Account</div>
-									<div class='menu-content'>
+								<div className='menu-container'>
+									<div className='menu-trigger'>Account</div>
+									<div className='menu-content'>
 										<NavLink to='/profile'>Profil</NavLink>
 										<NavLink to='/'>Déconnexion</NavLink>
 									</div>
