@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Questions from "./pages/Questions";
-import Account from "./pages/Account";
 import Profile from "./pages/Profile";
 import Form1 from "./pages/Form1";
 import Recyclable from "./pages/Recyclable";
