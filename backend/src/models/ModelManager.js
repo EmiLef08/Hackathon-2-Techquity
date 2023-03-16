@@ -7,11 +7,9 @@ class BrandManager extends AbstractManager {
 
   findByModel(model) {
     return this.database.query(`select * from  ${this.table} where id = ?`, [
-      model.id
+      model.id, model.model
     ]);
   }
-
-  
 
 
 }
