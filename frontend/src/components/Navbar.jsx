@@ -29,7 +29,10 @@ export default function Navbar() {
 	return (
 		<header>
 			<nav className='navbar'>
-				<div className='top-bar' />
+				<div className='top-bar'>
+					<p className='space'> 🔒 Espace bénévole</p>
+					<p className='email'>standard@emmaus-connect.org</p>
+				</div>
 				<div className='tabs-container'>
 					<NavLink to='/' className='navbar-brand'>
 						<img src={logo} alt='logo' className='logo' />
@@ -49,15 +52,15 @@ export default function Navbar() {
 							onMouseLeave={handleDropdownClose}
 						>
 							{isDropdownOpen ? (
-								<div class='menu-container'>
-									<div class='menu-trigger'>Account</div>
-									<div class='menu-content'>
+								<div className='menu-container'>
+									<div className='menu-trigger'>Mon Compte</div>
+									<div className='menu-content'>
 										<NavLink to='/profile'>Profil</NavLink>
-										<NavLink to='/'>Déconnexion</NavLink>
+										<NavLink to='/login'>Déconnexion</NavLink>
 									</div>
 								</div>
 							) : (
-								"Account"
+								"Mon Compte"
 							)}
 						</NavLink>
 					</div>
