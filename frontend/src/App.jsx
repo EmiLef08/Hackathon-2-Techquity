@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import Form1 from "./pages/Form1";
 import Recondition from "./pages/Recondition";
 import Recyclable from "./pages/Recyclable";
+import Visualisation from "./pages/Visualisation";
 
 export default function App() {
 	return (
@@ -16,6 +17,7 @@ export default function App() {
 			<Routes>
 				<Route path='/login' element={<Login />} />
 				<Route path='/' element={<Home />} />
+				<Route path='/visualisation' element={<Visualisation />} />
 				<Route path='/formulaire' element={<Form1 />} />
 				<Route path='/faq' element={<Questions />} />
 				<Route path='/account' element={<Login />} />
