@@ -26,11 +26,11 @@ export default function Home() {
 		</div>
 		<div className="actus">
 			Actualités
-			<div className="actu">La téléphonie mobile entre morosité et innovations - CB NEWS</div>
-			<div className="actu">Une énorme forfait de 200 Go ? C'est possible, mais on hésite encore sur le choix de l'opérateur... - Ariase</div>
-			<div className="actu">Ameli : un nouveau service pour avoir la CPAM au téléphone, sans aucune attente - Actu.fr</div>
-			<div className="actu">En 2022, l'iPhone a clairement dominé le marché des téléphones portables - iPhon.fr</div>
-			<div className="actu">Le succès du reconditionnement et de la réparation des téléphones portables à Charleville-Mézières - L'Ardennais</div>
+			<a href="https://www.cbnews.fr/mobile/image-telephonie-mobile-entre-morosite-innovations-74876" className="actu">La téléphonie mobile entre morosité et innovations - CB NEWS</a>
+			<a href="https://www.ariase.com/mobile/actualite/un-enorme-forfait-de-200-go-c-est-possible-mais-on-hesite-encore-sur-le-choix-de-l-operateur" className="actu">Un énorme forfait de 200 Go ? C'est possible, mais on hésite encore sur le choix de l'opérateur... - Ariase</a>
+			<a href="https://actu.fr/societe/ameli-un-nouveau-service-pour-avoir-la-cpam-au-telephone-sans-aucune-attente_57945457.html" className="actu">Ameli : un nouveau service pour avoir la CPAM au téléphone, sans aucune attente - Actu.fr</a>
+			<a href="https://www.iphon.fr/post/2022-iphone-domine-marche-telephones-portables" className="actu">En 2022, l'iPhone a clairement dominé le marché des téléphones portables - iPhon.fr</a>
+			<a href="https://www.lardennais.fr/id464188/article/2023-03-11/le-succes-du-reconditionnement-et-de-la-reparation-des-telephones-portables" className="actu">Le succès du reconditionnement et de la réparation des téléphones portables à Charleville-Mézières - L'Ardennais</a>
 		</div>
 		
 	</div>
