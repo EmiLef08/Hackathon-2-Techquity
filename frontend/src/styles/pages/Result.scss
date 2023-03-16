@@ -1,0 +1,99 @@
+.container-result {
+  display: flex;
+  margin: 2rem;
+  padding: 1rem;
+  width: auto;
+  height: 100%;
+  background-color: #7ABDEA;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.card-container-result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.note-container {
+  align-self: center;
+}
+
+.note {
+  margin-top: 3rem;
+  font-size: 3rem;
+  background-color: #d6d6d6;
+  border-radius: 2rem;
+  width: 10rem;
+  border: 2px solid #000000;
+}
+
+.table {
+  margin-top: 5rem;
+  border: 3px solid #000000;
+  height: 50%;
+  width: 50rem;
+  text-align: right;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  border: 1px solid #000000;
+  padding: 5px 4px;
+}
+
+.table tbody td {
+  font-size: 20px;
+  text-align: center;
+}
+
+.category-1hc, .category-2c, .category-3b, .category-4a, .category-premium {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.table thead {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  border-bottom: 3px solid #000000;
+}
+
+.table thead th {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  padding: 1rem;
+}
+
+.table tfoot td {
+  font-size: 14px;
+}
+
+.table tr {
+  background-color: #d6d6d6;
+}
+
+.category-1hc {
+  background-color: #01a8f0;
+}
+
+.category-2c {
+  background-color: #84c560;
+}
+
+.category-3b {
+  background-color: #e6ef18;
+}
+
+.category-4a {
+  background-color: #e6b618;
+}
+
+.category-premium {
+  background-color: #e60a18;
+}
