@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Questions from "./pages/Questions";
@@ -25,6 +26,7 @@ export default function App() {
 				<Route path='/recyclable' element={<Recyclable />} />
 				<Route path="/recondition" element={<Recondition />} />
 			</Routes>
+			<Footer />
 		</>
 	);
 }

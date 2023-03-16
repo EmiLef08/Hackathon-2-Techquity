@@ -66,6 +66,33 @@
     font-weight: bold;
 }
 
+.book {
+    margin: 2rem 0 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-self: stretch;
+    border: solid 0.4rem #489ED7;
+    border-radius: 20px;
+    background-color: #7ABDEA;
+    padding: 0.3rem;
+    box-shadow: 5px 5px 5px #489ED7;
+    cursor: pointer;
+}
+
+.book:hover {
+    color: #489ED7;
+    background-color: #FFFFFF;
+}
+
+.book-title {
+   font-family: $title-font;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #489ED7; 
+}
+
 .form {
     margin: 2rem 0 1rem 0rem;
     display: flex;
