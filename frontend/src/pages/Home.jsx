@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/pages/Home.scss";
 import { NavLink } from "react-router-dom"
-import { DownloadOutline, CreateOutline, PersonCircleOutline } from 'react-ionicons';
+import { DownloadOutline, CreateOutline, PersonCircleOutline, BookOutline } from 'react-ionicons';
 
 export default function Home() {
 	return (
@@ -15,6 +15,10 @@ export default function Home() {
 		</div>
 		<div className="icons">
 				Nouvel appareil ?
+				<NavLink to="/catalogue">
+					<BookOutline color="#FFFFFF" height="120px" width="120px" cssClasses="book" title="Consulter le catalogue" />
+				</NavLink>
+				<p className="book-title">Consulter le catalogue</p>
 				<NavLink to="/formulaire">
 					<CreateOutline color="#FFFFFF" height="120px" width="120px" cssClasses="form" title="Insérer les données" />
 				</NavLink>
