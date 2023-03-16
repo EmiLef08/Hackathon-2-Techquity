@@ -10,8 +10,5 @@ findByBrand(brand) {
     ]);
   }
 
-
-
-
 }
   module.exports = BrandManager;
