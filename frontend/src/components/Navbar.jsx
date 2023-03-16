@@ -53,14 +53,14 @@ export default function Navbar() {
 						>
 							{isDropdownOpen ? (
 								<div className='menu-container'>
-									<div className='menu-trigger'>Account</div>
+									<div className='menu-trigger'>Mon Compte</div>
 									<div className='menu-content'>
 										<NavLink to='/profile'>Profil</NavLink>
 										<NavLink to='/login'>Déconnexion</NavLink>
 									</div>
 								</div>
 							) : (
-								"Account"
+								"Mon Compte"
 							)}
 						</NavLink>
 					</div>

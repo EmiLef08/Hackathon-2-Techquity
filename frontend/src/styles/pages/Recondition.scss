@@ -1,0 +1,61 @@
+@import "../variables.scss";
+
+.recon-form {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: space-around;
+    width: auto;
+    height: 100%;
+    background-color: #8D9DD0;
+    border-radius: 20px;
+}
+
+.recon-bloctexte {
+    background-color: #ffffff;
+    margin: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+    border-radius: 20px;
+}
+
+.recon-title {
+    align-self: center;
+    font-family: $title-font;
+    color: #213A8E;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    margin: 1rem 0.8rem 1rem 0.8rem;
+}
+
+.recon-texte {
+    align-self: center;
+    font-family: $text-font;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    margin: 1rem 0.8rem 1rem 0.8rem;
+}
+
+.recon-button {
+    align-self: center;
+    margin: 2rem 1rem 2rem 1rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    border: solid 5px #213A8E;
+    border-radius: 20px;
+    width: min-content;
+    font-family: $text-font;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #213A8E;
+    cursor: pointer;
+}
+
+.recon-button:hover {
+    background-color: #213A8E;
+    color: #ffffff;
+    border: solid 5px #ffffff;
+    outline: solid 5px #213A8E;
+}
