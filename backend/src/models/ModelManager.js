@@ -2,7 +2,7 @@ const AbstractManager = require("./AbstractManager");
 
 class BrandManager extends AbstractManager {
   constructor() {
-    super({ table: "brand" });
+    super({ table: "model" });
   }
 
   findByModel(model) {

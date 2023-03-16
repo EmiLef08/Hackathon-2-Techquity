@@ -3,7 +3,7 @@ const models = require("../models");
 const browse = (req, res) => {
   models.phone
     .findAll()
-    .then(([rows]) => {
+    .then(([rows]) => { 
       res.send(rows);
     })
     .catch((err) => {
@@ -29,9 +29,9 @@ const read = (req, res) => {
     });
 };
 const edit = (req, res) => {
-  const dream = req.body;
+  const phone = req.body;
 
-  dream.id = parseInt(req.params.id, 10);
+  phone.id = parseInt(req.params.id, 10);
 
   models.phone
     .update(phone)
@@ -94,17 +94,13 @@ const updatePhone = (req, res) => {
     });
 };
 
+const getPhone = (req, res) => {
+  const phone = req.params.model;
 
-
-const getPhoneByBrand = (req, res, next) => {
-  models.brand
-    .findByBrand(req.body)
-    .then(([brand]) => {
-      if (brand[0] != null) {
-        [req.brand] = brand;
-        res.location(`/brand/${user.insertId}`).sendStatus(201);
-        next();
-      }
+  models.phone
+    .getAllPhone(phone)
+    .then((result) => {
+      res.status(200).json(result);
     })
     .catch((err) => {
       console.error(err);
@@ -114,9 +110,9 @@ const getPhoneByBrand = (req, res, next) => {
 
 
 module.exports = {
+  getPhone,
   addPhone,
   updatePhone,
-  getPhoneByBrand,
   destroy,
   browse,
   read,
