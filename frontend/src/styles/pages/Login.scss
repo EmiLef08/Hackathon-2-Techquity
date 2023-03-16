@@ -1,89 +1,53 @@
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 0.5fr);
+.card-container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 77vh;
   width: 85vw;
   background-color: #a3d8d9;
   border-radius: 0.5rem;
-  gap: 2rem;
-  padding: 2rem;
 }
 
-.profile-picture {
-  place-self: center;
-  grid-column: 2;
-  height: auto;
-  width: 10rem;
-  border-radius: 6rem;
-  margin-bottom: 1rem;
-  border: 3px solid #b2b2b2;
-}
-
-.pencil {
-  position: absolute;
-  top: 36.5%;
-  left: 52%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  background-color: #ffffff;
-  border-radius: 1.5rem;
-  border: 4px solid #a3d8d9;
-}
-
-.about {
-  grid-column: 1;
-  grid-row: 2/4
-}
-
-.password {
-  grid-column: 2;
-  grid-row: 2/4;
-}
-
-.password-form {
-  height: 435px;
-}
-
-.about-form, .password-form, .platform, .disconnect {
+.connexion {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 8rem;
   background-color: #ffffff;
-  border: 4px solid #a3d8d9;
-  padding: 2rem;
-  border: 2px solid #767676;
+  border: 3px solid #292929;
   border-radius: 20px;
-  gap: 1rem;
+  padding: 2rem;
+  height: 30rem;
+  width: 60rem;
 }
 
-.input {
-  padding-right: 8rem;
-  padding: 0.75rem 0 0 0;
+.connect {
+  font-size: 2.3rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
-.platform {
-  grid-column: 3;
-  grid-row: 2;
+.input-login {
+  width: 40rem;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
 }
 
-.disconnect {
-  grid-column: 3;
-  grid-row: 2/3;
-  margin-top: 15rem;
-  height: 194px;
-}
+// .btn-connect {
+//   width: 40rem;
+//   padding: 0.7rem;
+// }
 
-
-.btn{
+.btn-connect {
   appearance: none;
   backface-visibility: hidden;
   background-color: #36acb0;
@@ -113,9 +77,11 @@
   touch-action: manipulation;
   vertical-align: top;
   white-space: nowrap;
+  width: 40rem;
+  padding: 0.7rem;
 }
 
-.btn:hover {
+.btn-connect:hover {
   background-color: #7bcfd0;
   box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
   opacity: 1;
@@ -123,20 +89,16 @@
   transition-duration: .35s;
 }
 
-.btn:hover:after {
+.btn-connect:hover:after {
   opacity: .5;
 }
 
-.btn:active {
+.btn-connect:active {
   box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
   transform: translateY(2px);
   transition-duration: .35s;
 }
 
-.btn:active:after {
+.btn-connect:active:after {
   opacity: 1;
-}
-
-.password-forgotten {
-  margin-top: 2rem;
 }

@@ -1,55 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+
+import "../styles/pages/Form1.scss";
 
 export default function Form1() {
+	const [brandValue, setBrandValue] = useState("");
+	const [modelValue, setModelValue] = useState("");
 	return (
-		<>
-			<div>
-				<form className='Formulaire'>
-					<input type='text' placeholder='Marque' id='text' />
-					<br />
-					<input type='text' placeholder='Model' id='text' />
-					<br />
-					<input type='color' id='Color' />
-					Couleur
-					<br />
+		<div className='container1'>
+			<div className='card-container1'>	
+				<form className='form1'>
 					<input
-						type='number'
-						required
-						min='8'
-						max='14'
-						placeholder=' version Android min 8'
-						id='number'
+						type='text'
+						placeholder='Marque'
+						id='marque'
+						onChange={(e) => setBrandValue(e.target.value)}
 					/>
-					<br />
-					<input type='text' placeholder='Ram' id='text' />
-					<br />
-					<input type='text' placeholder='Mémoire' id='text' />
-					<br />
 					<input
-						type='number'
-						placeholder='Ecran min 4'
-						step='0.1'
-						id='number'
-						name='inputNumber'
-						required
-						min='4'
-						max='7'
+						type='text'
+						placeholder='Modèle'
+						id='text'
+						onChange={(e) => setModelValue(e.target.value)}
 					/>
-					"<br />
-					<input type='checkbox' id='checkbox' />
-					Chargeur et cable
-					<br />
+					<input type='text' placeholder='Ram (2GO min)' id='ram' />
+					<input type='text' placeholder='Mémoire (16GO min)' id='ram' />
+					<input type='text' placeholder='État' id='etat' />
+					<div className='checkbox-equipement'>
+						<input type='checkbox' id='checkbox' />
+						<p>Chargeur et cable</p>
+					</div>
 				</form>
 			</div>
-			<div>
-				<iframe
-					title='Geekbench'
-					src='https://www.phonescoop.com/'
-					sandbox='allow-same-origin allow-scripts'
-					width='100%'
-					height='500px'
-				/>
-			</div>
-		</>
+			{modelValue !== "" && (
+				<div>
+					<iframe
+						title='Geekbench'
+						src={`https://www.phonescoop.com/search/jump_search.php?q=${brandValue} ${modelValue}`}
+						sandbox='allow-same-origin allow-scripts'
+						width='150%'
+						height='500px'
+					/>
+				</div>
+			)}
+		</div>
 	);
 }

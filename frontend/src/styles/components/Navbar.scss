@@ -7,9 +7,25 @@
 }
 
 .top-bar {
-  height: 2.25rem;
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
   width: 100%;
   background-color: $cyan-blue;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  color: #ffffff;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  color: #ffffff;
 }
 
 .logo {

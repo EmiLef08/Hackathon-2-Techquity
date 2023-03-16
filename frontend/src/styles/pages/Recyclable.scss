@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container-recyclable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 77vh;
+  width: 85vw;
+  background-color: #a3d8d9;
+  border-radius: 0.5rem;
+}
+
+.recyclable-card {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 3rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+}
+
+.recycling {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.not-eligible {
+  margin: 3rem;
+}
+
+.recycling-content {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.recycling-link {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
