@@ -1,0 +1,73 @@
+.phone-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+   
+    &__item {
+    display: block;
+    padding-left: 4.5rem;
+     background-color:#edf4f4;
+        border: 3px solid #097588;
+        border-radius: 20px;
+        max-width: 40%;
+        margin-bottom: 2rem;
+        justify-content: center;
+        width: 50%;
+        height: 8%;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+        }
+    
+    &__brand {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom:0.5rem;
+        align-self: center;
+        justify-content: center;
+        color: rgb(18, 18, 21);
+    }
+
+    &__model{
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(126, 126, 167);
+        margin-bottom: 0.5rem;
+    }
+
+      &__os {
+          font-weight: bold;
+          color: #213ABE;
+        margin-bottom: 0.25rem;
+      }
+    
+      &__ram {
+          color: #213ABE;
+      }
+    
+      &__memory {
+          color: #213ABE;
+      }
+    
+      &__screen-size {
+          color: #7ABDEA;
+      }
+    
+      &__network {
+          color: #489ED7;
+      }
+    
+      &__category {
+          font-style: italic;
+          color: #231f1f;
+      }
+      
+
+    &__image {
+        display: block;
+        margin:auto;
+        padding-right: 4.5rem;
+        margin-top: 10px;
+        max-width: 80%;
+        margin-bottom: 0.5rem;
+        height: 45%;
+    }}
