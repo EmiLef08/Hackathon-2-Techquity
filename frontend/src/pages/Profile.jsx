@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Edit2, LogOut } from "react-feather";
 
 import "../styles/pages/Profile.scss";
@@ -5,6 +6,11 @@ import "../styles/pages/Profile.scss";
 import pfp from "../assets/default-pfp.jpeg";
 
 export default function Account() {
+	const navigate = useNavigate();
+
+	const onPressDisconnect = () => {
+		navigate("/login");
+	};
 	return (
 		<div className='container'>
 			<div className='card-container'>
@@ -59,7 +65,7 @@ export default function Account() {
 				</div>
 				<div className='disconnect'>
 					<p className='platform-container'>Déconnexion</p>
-					<button type='button' className='btn'>
+					<button type='button' className='btn' onClick={onPressDisconnect}>
 						<LogOut color='#000000' size={20} />
 					</button>
 				</div>
