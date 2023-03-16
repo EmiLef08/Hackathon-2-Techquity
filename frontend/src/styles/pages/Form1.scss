@@ -65,7 +65,7 @@
   width: 100%;
 }
 
-button {
+.btn-form {
   align-self: center;
   padding: 1.5rem 1rem 1.5rem 1rem;
   border: solid 5px #489ED7;
@@ -79,7 +79,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.btn-form:hover {
   background-color: #489ED7;
   color: #ffffff;
   border: solid 5px #ffffff;

@@ -53,7 +53,7 @@ export default function Form1() {
               <input type="checkbox" id="checkbox" />
               <p>Chargeur et cable</p>
             </div>
-            <button type="submit">Envoyer</button>
+            <button type="submit" className="btn-form">Envoyer</button>
           </form>
         </div>
         {brandValue !== "" && modelValue !== "" && (
