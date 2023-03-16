@@ -6,9 +6,8 @@ import Home from "./pages/Home";
 import Questions from "./pages/Questions";
 import Profile from "./pages/Profile";
 import Form1 from "./pages/Form1";
-import Form2 from "./pages/Form2";
-import Reconditionnement from "./pages/Reconditionnement";
-import Recyclage from "./pages/Recyclage";
+import Recondition from "./pages/Recondition";
+import Recyclable from "./pages/Recyclable";
 
 export default function App() {
 	return (

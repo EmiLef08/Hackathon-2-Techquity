@@ -15,7 +15,7 @@ export default function Home() {
 		</div>
 		<div className="icons">
 				Nouvel appareil ?
-				<NavLink to="/">
+				<NavLink to="/formulaire">
 					<CreateOutline color="#FFFFFF" height="120px" width="120px" cssClasses="form" title="Insérer les données" />
 				</NavLink>
 				<p className="form-title">Insérer les données</p>
