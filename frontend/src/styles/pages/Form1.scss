@@ -1,64 +1,99 @@
+@import "../variables.scss";
+
 .container1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem;
+  padding: 1rem;
+  width: auto;
+  height: 100%;
+  background-color: #7ABDEA;
+  border-radius: 20px;
+}
+
+.card-container1 {
+  display: flex;
+  flex-direction: column;
+} 
   
-  .card-container1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 40vh;
-    width: 50vw;
-    background-color: #7ABDEA;
-    border-radius: 0.5rem;
-    position: relative;
-  } 
+.form1 {
+  margin-top: 1rem ;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 20px;
+  width: 200%;
+  background-color: #ffffff;
+  border: 1.5px solid #489ED7;
+}
   
-  .form1 {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    border-radius: 20px;
-    width: 30rem;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    margin-top: -2rem;
-  }
+.form1 input {
+  align-self: stretch;
+  margin-bottom: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
   
-  .form1 input {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
+.checkbox-equipement {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 1rem 0;
+  justify-content: center;
+}
   
-  .checkbox-equipement {
-    display: flex;
-    align-items: center;
-  }
+.checkbox-equipement input {
+  margin-right: 0.5rem;
+}
+
+.checkbox-equipement p {
+  font-family: $text-font;
+}
+
+#checkbox {
+  margin-top: 0.4rem;
+}
   
-  .checkbox-equipement input {
-    margin-right: 0.5rem;
-  }
+#marque, #model {
+  width: 100%;
+}
   
-  #marque, #model {
-    width: 100%;
-  }
-  
-  #ram, #memoire, #etat {
-    width: 50%;
-  }
-  
-  iframe {
-    border-radius: 20px;
-    margin-top: 1rem;
-    margin-right: 2rem;
-    width: 150%;
+#ram, #memoire, #etat {
+  width: 100%;
+}
+
+.btn-form {
+  align-self: center;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border: solid 5px #489ED7;
+  border-radius: 20px;
+  width: 10rem;
+  height: auto;
+  font-family: $text-font;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #489ED7;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  background-color: #489ED7;
+  color: #ffffff;
+  border: solid 5px #ffffff;
+  outline: solid 5px #489ED7;
+}
+
+iframe {
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  width: 150%;
   top: 0;
   right: 0;
   bottom: 0px;
   left: 320px;
-  } 
+} 
   
