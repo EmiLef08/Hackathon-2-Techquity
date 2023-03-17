@@ -15,10 +15,10 @@ export default function Form1() {
 
     if (conditionValue === "bon") {
       setRedirectRoute("/formulaire2");
-    } else if (conditionValue === "reparable") {
-      setRedirectRoute("/reparation");
+    } else if (conditionValue === "réparable") {
+      setRedirectRoute("/recondition");
     } else {
-      setRedirectRoute("/recyclage");
+      setRedirectRoute("/recyclable");
     }
   };
 
@@ -45,7 +45,7 @@ export default function Form1() {
             <input type="text" placeholder="Mémoire (16GO min)" id="ram" />
             <input
               type="text"
-              placeholder="État bon, reparable, à recycler"
+              placeholder="État bon, réparable, à recycler"
               id="etat"
               onChange={(e) => setConditionValue(e.target.value)}
             />
@@ -53,10 +53,10 @@ export default function Form1() {
               <input type="checkbox" id="checkbox" />
               <p>Chargeur et cable</p>
             </div>
-            <button type="submit">Envoyer</button>
+            <button type="submit" className="btn-form">Envoyer</button>
           </form>
         </div>
-        {modelValue !== "" && (
+        {brandValue !== "" && modelValue !== "" && (
           <div>
             <iframe
               title="Geekbench"

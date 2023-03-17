@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Questions from "./pages/Questions";
@@ -9,6 +10,7 @@ import Form1 from "./pages/Form1";
 import Recondition from "./pages/Recondition";
 import Recyclable from "./pages/Recyclable";
 import Catalogue from "./pages/Catalogue";
+import Visualisation from "./pages/Visualisation";
 
 export default function App() {
 	return (
@@ -17,6 +19,7 @@ export default function App() {
 			<Routes>
 				<Route path='/login' element={<Login />} />
 				<Route path='/' element={<Home />} />
+				<Route path='/visualisation' element={<Visualisation />} />
 				<Route path='/formulaire' element={<Form1 />} />
 				<Route path='/faq' element={<Questions />} />
 				<Route path='/account' element={<Login />} />
@@ -25,6 +28,7 @@ export default function App() {
 				<Route path="/recondition" element={<Recondition />} />
 				<Route path="/catalogue" element={<Catalogue />} />
 			</Routes>
+			<Footer />
 		</>
 	);
 }
