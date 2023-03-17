@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/pages/Result.scss";
 
 export default function Result() {
-	const note = localStorage.getItem("note");
+	const note = JSON.parse(localStorage.getItem("note"));
 
 	console.log(note);
 	return (

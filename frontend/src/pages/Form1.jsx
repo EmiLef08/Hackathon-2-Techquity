@@ -55,7 +55,7 @@ export default function Form1() {
 			} else if (note >= 170 && note < 250) {
 				return "4 - A";
 			} else {
-				return "Premium";
+				return "5 - Premium";
 			}
 		}
 
@@ -67,6 +67,8 @@ export default function Form1() {
 			parseInt(indiceAntutuValue),
 			parseInt(ponderationValue)
 		);
+
+		localStorage.setItem("note", JSON.stringify(note));
 	};
 
 	if (redirectRoute) navigate(redirectRoute);
@@ -86,7 +88,7 @@ export default function Form1() {
 							type='text'
 							placeholder='Modèle'
 							id='text'
-							onChange={(e) => setModelValue(e.target.value.replace(" ", "-"))}
+							onChange={(e) => setModelValue(e.target.value.replace(/ /g, "-"))}
 						/>
 						<input
 							type='text'
