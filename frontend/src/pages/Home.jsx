@@ -36,6 +36,10 @@ const handleOnFileLoad = (data) => {
       </div>
       <div className="icons">
         Nouvel appareil ?
+        <NavLink to="/catalogue">
+					<BookOutline color="#FFFFFF" height="120px" width="120px" cssClasses="book" title="Consulter le catalogue" />
+				</NavLink>
+				<p className="book-title">Consulter le catalogue</p>
         <NavLink to="/formulaire">
           <CreateOutline color="#FFFFFF" height="120px" width="120px" cssClasses="form" title="Insérer les données" />
         </NavLink>
