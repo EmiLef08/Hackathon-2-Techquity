@@ -1,9 +1,15 @@
+
+
+.page-catalogue{
+box-sizing:border-box;
+
+}
+
 .phone-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     
-   
     &__item {
     display: block;
     padding-left: 4.5rem;

@@ -15,6 +15,7 @@ useEffect(() => {
 
 
 return (
+  <div className="page-catalogue">
        <div className="phone-details">
       {data && data.map((phone) => (
         <div className="phone-details__item" key={phone.id}>
@@ -29,7 +30,7 @@ return (
          <img className="phone-details__image" src={phone.image} alt={`${phone.brand} ${phone.model_name}`}/>
         </div>
       ))}
-    </div>
+    </div></div>
   )
 }
 
