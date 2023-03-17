@@ -19,7 +19,7 @@ export default function Home() {
 	};
   };
 
-const handleOnFileLoad = (data) => {
+  const handleOnFileLoad = (data) => {
 	const csvData = data.get('csvData');
 	localStorage.setItem('csvData', csvData);
 	navigate('/visualisation');

@@ -9,6 +9,7 @@ import Profile from "./pages/Profile";
 import Form1 from "./pages/Form1";
 import Recondition from "./pages/Recondition";
 import Recyclable from "./pages/Recyclable";
+import Catalogue from "./pages/Catalogue";
 import Visualisation from "./pages/Visualisation";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
 				<Route path='/profile' element={<Profile />} />
 				<Route path='/recyclable' element={<Recyclable />} />
 				<Route path="/recondition" element={<Recondition />} />
+				<Route path="/catalogue" element={<Catalogue />} />
 			</Routes>
 			<Footer />
 		</>

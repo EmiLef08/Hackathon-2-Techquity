@@ -6,7 +6,7 @@ class BrandManager extends AbstractManager {
   }
 findByBrand(brand) {
     return this.database.query(`select * from  ${this.table} where id = ?`, [
-      brand.id, brand.brand,
+      brand.brand
     ]);
   }
 
