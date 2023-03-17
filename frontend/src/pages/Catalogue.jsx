@@ -6,6 +6,8 @@ import "../styles/pages/Catalogue.scss";
 function Catalogue() {
 const [data, setData] = useState();
 
+
+
 useEffect(() => {
     fetch(`${import.meta.env.VITE_BACKEND_URL}/phones/Apple`)
       .then(res => res.json())
