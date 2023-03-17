@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/pages/Home.scss";
 import { NavLink, useNavigate } from "react-router-dom";
-import { DownloadOutline, CreateOutline, PersonCircleOutline } from 'react-ionicons';
+import { DownloadOutline, CreateOutline, PersonCircleOutline, BookOutline } from 'react-ionicons';
 
 export default function Home() {
   const navigate = useNavigate();
