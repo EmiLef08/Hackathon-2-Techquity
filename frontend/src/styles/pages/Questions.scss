@@ -7,7 +7,7 @@
 	height: 100%;
     padding: 5% 5% 3.5rem 5%;
     box-sizing: border-box;
-    background-color: #D6D6D6;
+    background-color: #B6C1E7;
     border-radius: 20px;
     color: #FFFFFF;
     // align-content: center;
@@ -33,7 +33,6 @@
     font-weight: bold;
     margin: 0.5rem 0 1rem 0;
     text-align: center;
-    text-shadow: 2px 0 10px #E6334C;
 }
 
 .box {
@@ -59,10 +58,10 @@
 }
 
 .box-title {
-	background-color: #E6334C;
+	background-color: #797979;
 	border-radius: 1rem 1rem 0 0;
 	margin: 0;
-	font-size: 1rem;
+	font-size: 1.75rem;
 	color: #ffffff;
 	cursor: initial;
 	text-align:left;
@@ -72,17 +71,23 @@
 	flex-direction: row;
 	cursor: pointer;
     padding: 20px 20px 10px 10px;
+	text-shadow: 1px 1px 1px #000000;
+	transition: transform 0.2s ease-in-out;
+}
+
+.box-title:hover {
+	transform: translateX(10px);
 }
 
 .box-content {
 	width: 100%;
 	padding: 30px 20px;
-	font-size: 0.8rem;
+	font-size: 1rem;
     font-family: $text-font;
     line-height: 1.5rem;
 	color: $white;
 	display: none;
-	background-color: #ED7081;
+	background-color: #9E9E9E;
 	border-radius: 0 0 1rem 1rem;
 	overflow: hidden;
 	
@@ -101,11 +106,11 @@
 input:checked + .box {
 	height: auto;
 	margin: 16px 0;
-  	box-shadow: 5px 5px 5px #FFCC1B;
+  	box-shadow: 5px 5px 5px #797979;
 }
 
 input:checked + .box .box-title {
-	border-bottom: 1px solid #FFCC1B;
+	border-bottom: 1px solid #797979;
 }
 
 input:checked + .box .box-content,
@@ -115,6 +120,7 @@ input:checked + .box .box-close {
 
 .faq-arrows .box-title {
 	padding-left: 44px;
+	padding-right: 20px;
 	width: 100%;
 }
 

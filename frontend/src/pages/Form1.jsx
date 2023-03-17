@@ -132,12 +132,28 @@ export default function Form1() {
 							value={ponderationValue}
 							onChange={(e) => setPonderationValue(e.target.value)}
 						/>
-						<input
+						{/* <input
 							type='text'
 							placeholder='État (bon, réparable)'
 							id='etat'
 							onChange={(e) => setConditionValue(e.target.value)}
-						/>
+						/> */}
+						<select
+							name='choix'
+							id='choix'
+							onChange={(e) => setConditionValue(e.target.value)}
+						>
+							<option className='option'>État (bon, réparable, recyclable)</option>
+							<option value='bon' className='option'>
+								Bon
+							</option>
+							<option value='réparable' className='option'>
+								Réparable
+							</option>
+							<option value='recyclable' className='option'>
+								Recyclable
+							</option>
+						</select>
 						<div className='checkbox-equipement'>
 							<input type='checkbox' id='checkbox' />
 							<p>Chargeur et cable</p>
