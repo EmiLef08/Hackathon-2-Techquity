@@ -7,21 +7,21 @@
     &__item {
     display: block;
     padding-left: 4.5rem;
-     background-color:#edf4f4;
-        border: 3px solid #097588;
+     background-color:#EEEEEE;
+        border: 3px solid #deeaec;
         border-radius: 20px;
         max-width: 40%;
         margin-bottom: 2rem;
         justify-content: center;
         width: 50%;
-        height: 8%;
-        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+        height: 7%;
+        box-shadow: 12px 12px 2px 1px #B3B3B3;
         }
     
     &__brand {
         font-size: 2.5rem;
         font-weight: bold;
-        margin-bottom:0.5rem;
+        margin-bottom:1rem;
         align-self: center;
         justify-content: center;
         color: rgb(18, 18, 21);
@@ -31,7 +31,7 @@
         font-size: 24px;
         font-weight: bold;
         color: rgb(126, 126, 167);
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.75rem;
     }
 
       &__os {
@@ -42,33 +42,37 @@
     
       &__ram {
           color: #213ABE;
+        margin-bottom: 0.25rem;
       }
     
       &__memory {
           color: #213ABE;
+        margin-bottom: 0.25rem;
       }
     
       &__screen-size {
-          color: #7ABDEA;
+          color: #489ED7;
+        margin-bottom: 0.25rem;
       }
     
       &__network {
           color: #489ED7;
+        margin-bottom: 0.25rem;
       }
     
       &__category {
           font-style: italic;
           color: #231f1f;
+        margin-bottom: 0.25rem;
       }
       
 
     &__image {
         display: block;
-        margin:auto;
-        border-radius: 10px;
-        padding-right: 4.5rem;
-        margin-top: 10px;
+        border-radius: 10%;
+        margin-top:20%;
         max-width: 80%;
         margin-bottom: 0.5rem;
         height: 45%;
+        box-shadow: 6px 6px 6px 6px rgba(183, 183, 188, 0.2);
     }}
