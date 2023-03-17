@@ -17,11 +17,6 @@ export default function Recondition() {
 				type='button'
 				value='Ajout à la liste de reconditionnement'
 			/>
-			<div className='absolute'>
-				<div className='half-arc3' style={{ "--percentage": "100%" }}>
-					<span className='label3'>100%</span>
-				</div>
-			</div>
 		</div>
 	);
 }

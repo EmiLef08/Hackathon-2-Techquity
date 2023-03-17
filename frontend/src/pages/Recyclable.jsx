@@ -24,9 +24,6 @@ export default function Recyclable() {
 						</Link>
 					</div>
 				</div>
-				<div className='half-arc' style={{ "--percentage": "100%" }}>
-					<span className='label'>100%</span>
-				</div>
 			</div>
 		</div>
 	);

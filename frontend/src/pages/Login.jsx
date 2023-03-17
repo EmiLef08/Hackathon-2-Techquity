@@ -21,7 +21,7 @@ export default function Login() {
 						className='input-login'
 					/>
 					<input
-						type='text'
+						type='password'
 						name='password'
 						placeholder='Mot de passe'
 						className='input-login'

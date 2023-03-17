@@ -28,7 +28,7 @@ export default function Home() {
 	return (
 		<div className='board'>
 			<div className='stats'>
-				<div className='hello-user'>Bonjour User !</div>
+				<div className='hello-user'>Bonjour Emeline !</div>
 				<PersonCircleOutline color='#FFFFFF' height='100px' width='100px' />
 				<div className='stat'>7500 personnes/familles équipées</div>
 				<div className='stat'>24000 équipements collectées</div>

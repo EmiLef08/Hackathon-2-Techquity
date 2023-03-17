@@ -26,17 +26,18 @@ export default function Account() {
 					<form className='about-form'>
 						<p className='title-form'>À propos de moi</p>
 						<label>Nom</label>
-						<input type='text' name='nom' id='nom' className='input' />
+						<input type='text' name='nom' id='nom' className='input' value="Lefebvre" />
 						<label>Prénom</label>
-						<input type='text' name='prenom' id='prenom' className='input' />
+						<input type='text' name='prenom' id='prenom' className='input' value="Emeline" />
 						<label>E-mail</label>
-						<input type='text' name='email' id='email' className='input' />
+						<input type='text' name='email' id='email' className='input' value="emilef08@gmail.com"/>
 						<label>Téléphone</label>
 						<input
 							type='text'
 							name='telephone'
 							id='telephone'
 							className='input'
+							value="0679309731"
 						/>
 					</form>
 				</div>
