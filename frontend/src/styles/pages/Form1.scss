@@ -1,0 +1,126 @@
+@import "../variables.scss";
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem;
+  padding: 1rem;
+  width: auto;
+  height: 100%;
+  background-color: #7ABDEA;
+  border-radius: 20px;
+}
+
+.card-container1 {
+  display: flex;
+  flex-direction: column;
+} 
+  
+.form1 {
+  margin-top: 1rem ;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 20px;
+  width: 200%;
+  background-color: #ffffff;
+  border: 1.5px solid #489ED7;
+}
+  
+.form1 input {
+  align-self: stretch;
+  margin-bottom: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form1 input,
+select {
+  align-self: stretch;
+  margin-bottom: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.option {
+  color: #757575;
+}
+  
+.checkbox-equipement {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0 0.5rem 0;
+  justify-content: center;
+}
+  
+.checkbox-equipement input {
+  margin-right: 0.5rem;
+}
+
+.checkbox-equipement p {
+  font-family: $text-font;
+}
+
+#checkbox {
+  margin-top: 0.4rem;
+}
+  
+#marque, #model {
+  width: 100%;
+}
+  
+#ram, #memoire, #etat {
+  width: 100%;
+}
+
+.btn-form {
+  align-self: center;
+  padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+  border: solid 5px #489ED7;
+  border-radius: 20px;
+  width: 10rem;
+  height: auto;
+  font-family: $text-font;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #489ED7;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  background-color: #489ED7;
+  color: #ffffff;
+  border: solid 5px #ffffff;
+  outline: solid 5px #489ED7;
+}
+
+iframe {
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  width: 710px;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 320px;
+} 
+
+.antutu-container {
+  margin-top: 3rem;
+  padding: 1.3rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 1.5px solid #489ED7;
+  width: 710px;
+}
+
+.antutu {
+  padding: 2rem;
+  color: #489ed7;
+}
+  

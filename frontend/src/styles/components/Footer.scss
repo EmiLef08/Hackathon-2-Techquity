@@ -1,0 +1,29 @@
+@import "../variables.scss";
+
+.foot-contain {
+    background-color: #272251;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    color: #FFFFFF;
+    align-items: center;
+    // height: 3rem;
+    padding: 1rem;
+}
+
+.foot-copy {
+    font-family: $title-font;
+    font-size: 1rem;
+}
+
+.foot-sites {
+    font-family: $text-font;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+.foot-sites a {
+    text-decoration: none;
+    color: #FFFFFF;
+}

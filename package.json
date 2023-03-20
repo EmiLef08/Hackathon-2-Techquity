@@ -1,0 +1,23 @@
+{
+  "name": "techquity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n front,back -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm --prefix ./frontend run dev\" \"npm --prefix ./backend run dev\"",
+    "migrate": "cd ./backend && node migrate.js",
+    "dev-front": "npm --prefix ./frontend run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "papaparse": "^5.4.0",
+    "react-csv": "^2.2.2",
+    "react-router-dom": "^6.9.0",
+    "sass": "^1.58.3"
+  }
+}
