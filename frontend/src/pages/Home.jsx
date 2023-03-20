@@ -30,10 +30,10 @@ export default function Home() {
 			<div className='stats'>
 				<div className='hello-user'>Bonjour Emeline !</div>
 				<PersonCircleOutline color='#FFFFFF' height='100px' width='100px' />
-				<div className='stat'>7500 personnes/familles équipées</div>
-				<div className='stat'>24000 équipements collectées</div>
+				<div className='stat'>7547 personnes/familles équipées</div>
+				<div className='stat'>24518 équipements collectées</div>
 				<div className='stat'>
-					60 à 70% des employés en structure d'insertion retrouvent une
+					68% des employés en structure d'insertion retrouvent une
 					situation stable
 				</div>
 			</div>

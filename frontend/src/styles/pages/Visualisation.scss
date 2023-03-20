@@ -11,7 +11,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 20px;
-    max-width: 800px;
+    width: 1000px;
     padding: 20px;
   }
   
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 100%;
+    width: 150%;
   }
   
   .visualisation-title {
@@ -30,13 +30,14 @@
     margin-bottom: 20px;
     text-align: center;
   }
-  
+
   input[type="file"] {
     border: none;
     font-size: 1.2rem;
     margin-bottom: 20px;
     outline: none;
     padding: 10px;
+    padding-left: 300px;
     width: 100%;
   }
   
